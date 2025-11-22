@@ -456,13 +456,6 @@ See `CLAUDE.md` for development guidelines:
 - Use GPU optimizations when beneficial (analyze overhead vs. gain)
 - No backward compatibility requirements
 
-### Testing
-
-Run tests:
-```bash
-pytest tests/
-```
-
 ## Troubleshooting
 
 ### CARLA Connection Issues
