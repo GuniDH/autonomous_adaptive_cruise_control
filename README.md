@@ -1,7 +1,13 @@
-<div>
-  <video src="https://github.com/user-attachments/assets/124c4650-be8b-4a55-bf58-d65afaba4743" controls="controls" style="max-width: 48%; display: inline-block;"></video>
-  <video src="https://github.com/user-attachments/assets/26ec70d9-dd43-457d-bff9-e0a031211844" controls="controls" style="max-width: 48%; display: inline-block;"></video>
-</div>
+<table>
+  <tr>
+    <td>
+      <video src="https://github.com/user-attachments/assets/124c4650-be8b-4a55-bf58-d65afaba4743" controls="controls" style="max-width: 100%;"></video>
+    </td>
+    <td>
+      <video src="https://github.com/user-attachments/assets/26ec70d9-dd43-457d-bff9-e0a031211844" controls="controls" style="max-width: 100%;"></video>
+    </td>
+  </tr>
+</table>
 
 # Smart Adaptive Cruise Control with RL-Guided Lane Changes
 
