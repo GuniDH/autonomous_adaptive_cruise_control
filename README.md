@@ -448,17 +448,6 @@ View KPIs in the console output during execution.
 - **Multi-threaded Perception**: Parallel processing of detection tasks
 - **Process Priority**: High priority for real-time performance (`psutil.HIGH_PRIORITY_CLASS`)
 
-## Development
-
-### Code Standards
-
-See `CLAUDE.md` for development guidelines:
-- Follow SOLID principles and Single Source of Truth (SSOT)
-- Write clean, production-style code focused on happy paths
-- Prioritize readable and maintainable code
-- Use GPU optimizations when beneficial (analyze overhead vs. gain)
-- No backward compatibility requirements
-
 ## Troubleshooting
 
 ### CARLA Connection Issues
@@ -490,13 +479,6 @@ See `CLAUDE.md` for development guidelines:
 - Ensure server waits for correct number of clients
 - Check network latency for multi-machine setups
 
-## Contributing
-
-1. Follow code standards in `CLAUDE.md`
-2. Ensure all tests pass
-3. Update documentation for new features
-4. Use descriptive commit messages
-
 ## License
 
 [Add your license here]
@@ -507,7 +489,3 @@ See `CLAUDE.md` for development guidelines:
 - **Ultralytics**: YOLO object detection and classification models
 - **CFZd**: Ultra-Fast Lane Detection v2 implementation
 - **PyTorch**: Deep learning framework
-
-## Contact
-
-[Add contact information]
