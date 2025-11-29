@@ -419,5 +419,5 @@ View KPIs in the console output during execution.
 
 ## License
 
-All Rights Reserved.
+MIT License
 Copyright (c) 2025 Guni Deyo Haness
