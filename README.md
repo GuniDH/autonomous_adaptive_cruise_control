@@ -165,20 +165,6 @@ Then run:
 python setup_carla.py
 ```
 
-### Dependencies
-
-Core dependencies (automatically installed via setup.py):
-- **ultralytics**: YOLO detection and classification models
-- **torch, torchvision**: Deep learning framework for DQN and YOLO
-- **opencv-python**: Image processing
-- **numpy**: Numerical computing
-- **shapely**: Geometric operations for lane/vehicle calculations
-- **pyzmq**: Multi-machine communication
-- **pygame**: Visualization and keyboard controls
-- **pyyaml**: Configuration management
-- **psutil**: Process priority management
-- **scipy, matplotlib, pandas, scikit-learn**: Scientific computing and analysis
-
 ## Configuration
 
 The system is configured via `config/carla_config.yaml`:
@@ -382,54 +368,6 @@ Training will:
 - Save checkpoints periodically
 - Log to TensorBoard
 
-**Note:** For custom traffic light classifier training, prepare your dataset and update paths in perception config.
-
-## Project Structure
-
-```
-lane_change/
-├── config/
-│   └── carla_config.yaml              # Main configuration
-├── src/lane_change/
-│   ├── config/
-│   │   ├── perception_config.py       # Perception settings
-│   │   └── decision_config.py         # RL settings
-│   ├── perception/                    # Perception pipeline
-│   │   ├── yolo_detector.py           # YOLO object detection
-│   │   ├── lane_detector.py           # UFLDv2 integration
-│   │   ├── traffic_light_yolo_classifier.py  # Traffic light YOLO
-│   │   ├── perception_core.py         # Pipeline coordinator
-│   │   └── ...
-│   ├── decision/                      # RL decision layer
-│   │   ├── dqn_network.py             # DQN architecture
-│   │   ├── rl_agent.py                # Training & inference agents
-│   │   ├── rl_trainer.py              # Training loop
-│   │   ├── decision_core.py           # Decision logic
-│   │   └── ...
-│   ├── gateway/                       # Abstraction layer
-│   │   ├── detector.py                # Detector interfaces
-│   │   ├── sensor_manager.py          # Sensor coordination
-│   │   ├── vehicle_controller.py      # Control interface
-│   │   ├── traffic_manager.py         # Traffic interface
-│   │   ├── server_client.py           # ZeroMQ client
-│   │   └── ...
-│   └── plant/                         # CARLA interface
-│       ├── carla_base_server.py       # Server base
-│       ├── carla_vehicle_manager.py   # Vehicle management
-│       ├── carla_sensor_manager.py    # Sensor management
-│       ├── carla_traffic_manager.py   # Traffic management
-│       └── ...
-├── models/                            # Pre-trained models (optional)
-├── scripts/                           # Utility scripts
-│   └── traffic_light_classifier/      # Traffic light training
-├── demo.py                            # Main demo client
-├── carla_server.py                    # Multi-client server
-├── train.py                           # RL training script
-├── training_server.py                 # Training environment
-├── setup.py                           # Package installation
-└── README.md                          # This file
-```
-
 ## Key Performance Indicators (KPIs)
 
 The system tracks performance metrics:
@@ -481,11 +419,5 @@ View KPIs in the console output during execution.
 
 ## License
 
-[Add your license here]
-
-## Acknowledgments
-
-- **CARLA Simulator Team**: Open-source autonomous driving simulator
-- **Ultralytics**: YOLO object detection and classification models
-- **CFZd**: Ultra-Fast Lane Detection v2 implementation
-- **PyTorch**: Deep learning framework
+All Rights Reserved.
+Copyright (c) 2025 Guni Deyo Haness
